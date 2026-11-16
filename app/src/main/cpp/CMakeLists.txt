@@ -87,8 +87,8 @@ target_compile_options(mambadoc_jni PRIVATE
     -ffunction-sections
     -fdata-sections
     -fvisibility=hidden
-    -Wall
-    -Wextra
+    
+    
     -Wno-unused-parameter
 )
 
