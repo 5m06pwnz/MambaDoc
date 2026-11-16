@@ -1,3 +1,7 @@
+
+git add README.md
+git commit -m "Add/update README"
+git push
 # MambaDoc — Air-Gapped Document Intelligence & RAG
 
 **100 % offline** Android document Q&A assistant built for the Samsung Galaxy S26 Ultra (Snapdragon 8 Elite Gen 5 / Oryon V3, 12 GB RAM, Android 16 / API 36).
