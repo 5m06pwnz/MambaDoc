@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MambaDoc</string>
+    <string name="vault_title">Document Vault</string>
+    <string name="chat_title">RAG Chat</string>
+    <string name="models_title">Models &amp; Settings</string>
+    <string name="import_docs">Import Documents</string>
+    <string name="summarize">Summarize</string>
+    <string name="delete">Delete</string>
+    <string name="thinking_mode">Deep Reasoning</string>
+    <string name="fast_mode">Fast Answer</string>
+    <string name="secure_screen">Prevent Screenshots</string>
+    <string name="low_ram_swap">Low-RAM Swap Mode</string>
+    <string name="scanned_pdf_warning">Scanned/Image-only PDF (No selectable text layer)</string>
+</resources>
