@@ -26,7 +26,7 @@ android {
                 cppFlags += listOf("-std=c++17", "-O3", "-fvisibility=hidden")
                 arguments += listOf(
                     "-DANDROID_STL=c++_shared",
-                    "-DGGML_CPU_KLEIDIAI=ON",
+                    "-DGGML_CPU_KLEIDIAI=OFF",
                     "-DGGML_NATIVE=OFF",
                     "-DGGML_OPENMP=OFF",
                     "-DGGML_LLAMAFILE=OFF",

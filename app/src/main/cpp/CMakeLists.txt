@@ -20,7 +20,7 @@ set(LLAMA_CPP_DIR "${CMAKE_CURRENT_SOURCE_DIR}/third_party/llama.cpp")
 if(EXISTS "${LLAMA_CPP_DIR}/CMakeLists.txt")
     message(STATUS "Using local llama.cpp submodule at ${LLAMA_CPP_DIR}")
     # Force the options before add_subdirectory so they stick.
-    set(GGML_CPU_KLEIDIAI ON  CACHE BOOL "KleidiAI for Oryon / Snapdragon" FORCE)
+    set(GGML_CPU_KLEIDIAI OFF  CACHE BOOL "KleidiAI for Oryon / Snapdragon" FORCE)
     set(GGML_NATIVE       OFF CACHE BOOL "Portable arm64-v8a" FORCE)
     set(GGML_OPENMP       OFF CACHE BOOL "" FORCE)
     set(GGML_LLAMAFILE    OFF CACHE BOOL "" FORCE)
@@ -43,7 +43,7 @@ else()
         GIT_TAG        master
         GIT_SHALLOW    TRUE
     )
-    set(GGML_CPU_KLEIDIAI ON  CACHE BOOL "" FORCE)
+    set(GGML_CPU_KLEIDIAI OFF  CACHE BOOL "" FORCE)
     set(GGML_NATIVE       OFF CACHE BOOL "" FORCE)
     set(GGML_OPENMP       OFF CACHE BOOL "" FORCE)
     set(GGML_LLAMAFILE    OFF CACHE BOOL "" FORCE)
