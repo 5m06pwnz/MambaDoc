@@ -80,16 +80,16 @@ target_link_libraries(mambadoc_jni
 # Portable but aggressive optimisations for arm64-v8a.
 # Do NOT set -march=armv8.7a globally – KleidiAI selects kernels at runtime.
 target_compile_options(mambadoc_jni PRIVATE
-    $<$<COMPILE_LANGUAGE:CXX>:-std=c++17>
+    ( < )<COMPILE_LANGUAGE:CXX>:-std=c++17>
     -O3
     -fno-exceptions
     -fno-rtti
     -ffunction-sections
     -fdata-sections
     -fvisibility=hidden
-    
-    
+    -Wno-deprecated-declarations
     -Wno-unused-parameter
+    -Wno-deprecated-declarations
 )
 
 target_link_options(mambadoc_jni PRIVATE
